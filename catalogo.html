@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="es">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+		<!-- SEO -->
+		<meta
+			name="description"
+			content="Kanki Store es una tienda de ropa deportiva que te brinda una calidad premium en todos sus productos, realizamos envios a todo el país por correo argentino"
+		/>
+		<meta
+			name="keywords"
+			content="tienda de ropa,tienda virtual,ecomerce,deportes,camiseta maradona,Selección de fútbol de Argentina,camiseta de boca 2022,camiseta de argentina 2022, camiseta river 2022,boca, Club Atlético Boca Juniors, river, Club Atlético River Plate,mercado pago, envio a domicilio"
+		/>
+		<meta property="og:title" content="KANKI STORE Indumentaria Deportiva premium" />
+		<meta
+			property="og:description"
+			content="Conoce la mejor calidad en ropa deportiva al menor precio.Consulta que hay de nuevo en nuestro catálogo y recibe tu compra en tu domicilio en un lapso de 3 a 5 días hábiles"
+		/>
+		<meta property="og:url" content="https://kankistore.netlify.app" />
+		<meta
+			property="og:image"
+			content="https://scontent.fepa9-2.fna.fbcdn.net/v/t1.6435-9/171412508_115917240597370_511223444072202236_n.jpg?_nc_cat=105&ccb=1-7&_nc_sid=09cbfe&_nc_eui2=AeE6mceg3l-yBfsSW0g4qtToZO6CtUwir9Fk7oK1TCKv0fqoLAyGUYuUiOuThWL6U5oIE91bX31B1qStiBoIsALX&_nc_ohc=9eTv6NqHcHIAX-FiYak&_nc_ht=scontent.fepa9-2.fna&oh=00_AT_OCvE5HH0_I5vl_27iDCqFG2BPPq7JauO0EsC3YpKbMA&oe=62D7826A"
+		/>
+
+		<!-- BT -->
+
+		<link
+			href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css"
+			rel="stylesheet"
+			integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor"
+			crossorigin="anonymous"
+		/>
+
+		<!-- CSS -->
+		<link rel="stylesheet" href="css/style.css" />
+
+		<!-- Fuentes -->
+		<link rel="preconnect" href="https://fonts.googleapis.com" />
+
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+
+		<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap" rel="stylesheet" />
+
+		<link rel="preconnect" href="https://fonts.googleapis.com" />
+
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+
+		<link
+			href="https://fonts.googleapis.com/css2?family=Macondo&family=PT+Serif&family=Roboto:wght@100&display=swap"
+			rel="stylesheet"
+		/>
+
+		<!-- TITLE -->
+		<title>Kanki Store | Catálogo actual del Stock disponible - Invierno</title>
+
+		<!-- ICONOS -->
+		<script src="https://kit.fontawesome.com/6fa6d3db93.js" crossorigin="anonymous"></script>
+		<link rel="icon" href="img/logo.webp" />
+
+	
+	</head>
+	<body>
+		<!-- HEADER -->
+
+		<header>
+			<!-- NAVBAR -->
+
+			<nav class="navbar navbar-expand-lg bg-dark fixed-top">
+				<div class="container-fluid">
+					<a class="navbar-brand li-estilo" href="index.html"><b class="b-estilo">Kanki Store</b></a>
+					<button
+						class="navbar-toggler menu-hamburguesa"
+						type="button"
+						data-bs-toggle="collapse"
+						data-bs-target="#navbarSupportedContent"
+						aria-controls="navbarSupportedContent"
+						aria-expanded="false"
+						aria-label="Toggle navigation"
+					>
+						<span class="navbar-toggler-icon"></span>
+					</button>
+					<div class="collapse navbar-collapse" id="navbarSupportedContent">
+						<ul class="navbar-nav me-auto mb-2 mb-lg-0">
+							<li class="nav-item">
+								<a class="nav-link li-estilo" href="catalogo.html">Catálogo</a>
+							</li>
+						</ul>
+					</div>
+				</div>
+			</nav>
+
+			<!-- FIN NAVBAR -->
+			<!-- Fin de Header -->
+		</header>
+
+		<!-- INICIO SECTION  -->
+		<section>
+			<div class="container">
+				<div class="row">
+					<h1 class="titulo-catalogo text-center col">Enterate de todo nuestro catalogo acá</h1>
+				</div>
+			</div>
+
+			<!-- LOGO DE WHATSAPP -->
+
+			<div class="wsp-container">
+				<a
+					href="https://wa.me/541123734148?text=Hola%20Kanki%20Store!%20Mi%20consulta%20es%20la%20siguiente"
+					role="button"
+					target="_blank"
+				>
+					<img src="img/iconos/wsp.webp" alt="Contacto vía WhatsApp" class="wsp-logo" />
+				</a>
+			</div>
+
+			<!-- CONTENEDOR DE PRODUCTOS-->
+
+			<div class="container contenedor-cards">
+			<main id="mostar-productos"></main>
+			</div>
+				
+
+			<!-- CARRITO -->
+			<h3 class="titulo-catalogo text-center">Carrito de compras <i class="fa-solid fa-cart-arrow-down"></i></h3>
+			<div id="carrito" class="carrito">
+				
+			</div>
+			<P class="total text-center">Precio final: $<span id="precio-total">0</span></P>
+
+			
+		</section>
+
+		<!-- Comienzo de Footer -->
+		<footer id="redes">
+			<!-- LOGOS REDES FOOTER -->
+			<div class="footer-images-container">
+				<a href="https://www.facebook.com/KanKiStore-109036814618746/?ref=pages_you_manage" target="__BLANK">
+					<i class="fa-brands fa-facebook"></i>
+				</a>
+				<a href="https://twitter.com" target="__BLANK"> <i class="fa-brands fa-twitter"></i> </a>
+				<a href="https://youtube.com" target="_blank"><i class="fa-brands fa-youtube"></i></a>
+				<a href="https://tiktok.com" target="__BLANK"> <i class="fa-brands fa-tiktok"></i> </a>
+				<a href="https://www.instagram.com/kankistore_/" target="__BLANK"> <i class="fa-brands fa-instagram"></i> </a>
+			</div>
+
+			<!-- TEXTO FOOTER -->
+			<div class="text-footer-container">
+				<p class="text-footer">Copyrigth Kanki Store todos los derechos reservados ©</p>
+				<p class="text-footer">Seguinos en todas nuestras redes sociales</p>
+				<p class="text-footer">#SOMOSKANKI</p>
+			</div>
+			<!-- Fin de Footer -->
+		</footer>
+
+		<!-- SCRIPT JS -->
+		<!-- <script src="js/main.js"></script> -->
+		<script src="js/miarchivo.js"></script>
+
+		<!-- JavaScript Bundle with Popper -->
+		<script
+			src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js"
+			integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2"
+			crossorigin="anonymous"
+		></script>
+	</body>
+</html>
+
+<!-- Fin -->

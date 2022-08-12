@@ -1,0 +1,75 @@
+
+
+/*MEDIA Q*/
+
+@media(max-width:1000px){
+
+    .titulo-productos{
+        padding: .5em;
+        font-size: 1em;
+        margin-top: -2.5em;
+    }
+
+    .redireccion-catalogo{
+        display: none;
+    }
+    /*CATALOGO*/
+    .contenedor-cards{
+
+        display: grid;
+        grid-template-columns: 1fr;
+        gap: 2em;
+        justify-items: center;
+        
+    }
+    .div-talle{
+        h2{font-size: 1em;}
+    }
+
+    /*ayuda iconos*/
+    .iconos-medios-pago{
+        width: 25%;
+    }
+    
+/*sobre nosotros staff*/
+.contenedor-staff{
+    display: flex;
+    flex-direction: column;
+    gap: 1em;
+    width: 75%;
+    
+}
+.carta-staff{
+    margin: .5em;
+}
+
+/*sobre nosotros nombre*/
+.contenedor-perros{
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 2em;
+    justify-items: center;
+}
+
+.img-perros{
+    width: 50%;
+}
+
+
+
+/*logo wsp y footer*/
+    .wsp-logo{
+        width: 8%;
+    }
+ 
+    .text-footer {
+        font-size: .4em;
+
+        &:nth-child(3){margin-right: 5em;}
+    }
+
+
+
+
+
+}

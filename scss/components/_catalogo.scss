@@ -1,0 +1,77 @@
+@import'../base/variables';
+@import'../base/extend';
+@import'../base/mixins';
+@import'../base/listas';
+
+/*COMIENZO DE ESTILO DE CATALOGO*/
+/*ESTILO TITULO*/
+
+.titulo-catalogo{
+    @extend %estilotitulo;
+    @include colores(#fff,#000,4px double #f8f9fa,all 1s);
+    border-radius: 50px;
+    
+
+    &:hover{
+        color: $color-principal-kanki;
+    }
+}
+/*CONTAINERS*/
+ .container-img{ 
+     .products-container{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;}
+}
+
+.contenedor-cards{
+    margin-top: 2em;
+    margin-bottom: 2em;
+}
+/*ESTILO DE IMGS*/
+
+.images-catalogo {
+
+     @include mwh(1em auto,100%,80%);
+    border: 2px solid map-get($map: $colores, $key:oscuro );
+    transition: all .5s;
+   &:hover{
+    cursor: zoom-in;
+    transform: scale(110%);
+   }
+    
+}
+
+.card{
+    outline: 2px solid map-get($map: $colores, $key:primario );
+}
+
+.boton-cat{
+    background-color: map-get($map: $colores, $key:primario );
+    border:2px solid map-get($map: $colores, $key:footer );
+    color: map-get($map: $colores, $key:footer );
+    transition: all 1.5s;
+    &:hover{
+        background-color: map-get($map: $colores, $key:footer );
+        color:map-get($map: $colores, $key:claro2 );
+        border: 2px solid map-get($map: $colores, $key:primario );
+    }
+}
+
+.div-talle{
+    @include colores(aliceblue,$color-footer,2px solid #000,all 1.5s);
+    margin: 2em;
+    cursor: default;
+    &:hover{
+        color: map-get($map: $colores, $key:primario );
+    }
+    
+    h2{
+        font-size: 1.5em;
+        font-family: $fuente-titulo;}
+
+    a{
+        text-decoration: none;
+        color: map-get($map: $colores, $key:primario );
+    }
+}
