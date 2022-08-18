@@ -34,6 +34,9 @@
 			crossorigin="anonymous"
 		/>
 
+		<!-- TOASTIFY -->
+		<link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/toastify-js/src/toastify.min.css">
+
 		<!-- CSS -->
 		<link rel="stylesheet" href="css/style.css" />
 
@@ -104,6 +107,9 @@
 				</div>
 			</div>
 
+	
+
+			
 			<!-- LOGO DE WHATSAPP -->
 
 			<div class="wsp-container">
@@ -117,10 +123,11 @@
 			</div>
 
 			<!-- CONTENEDOR DE PRODUCTOS-->
+	<div class="container">
 
-			<div class="container contenedor-cards">
 			<main id="mostar-productos"></main>
-			</div>
+		
+	</div>
 				
 
 			<!-- CARRITO -->
@@ -128,9 +135,14 @@
 			<div id="carrito" class="carrito">
 				
 			</div>
+			
 			<P class="total text-center">Precio final: $<span id="precio-total">0</span></P>
 
+			<div class="container d-flex justify-content-between">
+			<button id="vaciar-carrito" class="boton-cat">VACIAR CARRITO</button>
 			
+			<button class="boton-cat" id="boton-fin"> FINALIZAR COMPRA</button>
+			</div>
 		</section>
 
 		<!-- Comienzo de Footer -->
@@ -152,11 +164,17 @@
 				<p class="text-footer">Seguinos en todas nuestras redes sociales</p>
 				<p class="text-footer">#SOMOSKANKI</p>
 			</div>
+
+		</div>
+	</label>
+	</div>	
 			<!-- Fin de Footer -->
 		</footer>
 
 		<!-- SCRIPT JS -->
-		<!-- <script src="js/main.js"></script> -->
+		<script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+		<script type="text/javascript" src="https://cdn.jsdelivr.net/npm/toastify-js"></script>
+		<script src="js/stock.js"></script>
 		<script src="js/miarchivo.js"></script>
 
 		<!-- JavaScript Bundle with Popper -->
