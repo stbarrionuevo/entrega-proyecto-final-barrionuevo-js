@@ -196,28 +196,44 @@ const botonFin = document.getElementById('boton-fin').addEventListener('click', 
         timer: 3000})}})
 
 
-    const buttonDolar = document.getElementById("dolar-boton");
 
-    const calcularPrecioDolar = (totalAPagar,precioDolar) =>{
-        totalAPagar / precioDolar 
-        
-    }
+
+
+const buttonDolar = document.getElementById("dolar-boton");
+
+const total = totalAPagar.innerText
     
-    // const getPrecioDolar = () => { fetch("https://api-dolar-argentina.herokuapp.com/api/dolarblue").then((response) => response.json())
-    //     .then((data) => {console.log(data)})
-    //     .catch(error => console.log(error , "Hubo un error, algo salió mal"))
+    
+//Funcion con api
 
+      const getPrecioDolar = () => { fetch("https://www.dolarsi.com/api/api.php?type=dolar")
+      .then((response) => response.json())
+      .then((data) => {   
+       const dolarbluePrecio = data[1].casa.compra
         
-    //   }
+        console.log('Actualmente el precio de venta del dolar blue es de: $',dolarbluePrecio)
 
-      const getPrecioDolar = () => { fetch("https://www.dolarsi.com/api/api.php?type=valoresprincipales").then((response) => response.json())
-      .then((data) => {console.log(data.casa.venta) 
-        document.getElementById('dolar').appendChild(data.casa.venta[0])})
+      })
       .catch(error => console.log(error , "Hubo un error, algo salió mal"))
 
+
+    //   const calcularPrecioDolar = (total,dolarbluePrecio) =>{
+    //     totalDolar = (total /  dolarbluePrecio)
+
+    const calcularPrecioDolar = () => 
+    {
+        const span = document.getElementById('dolar')
+        const totalDolar = span.innerText = carrito.reduce((total , dolarbluePrecio) => 
+        (total / dolarbluePrecio), total)
+        
+        return totalDolar
+        
+    }
+
+
+
         calcularPrecioDolar();
-        const p = document.getElementById('dolar')
-        p.innerText = 0
+        
       
     }
   
@@ -237,3 +253,16 @@ const botonFin = document.getElementById('boton-fin').addEventListener('click', 
 
 
 
+
+
+
+
+
+
+
+    // const getPrecioDolar = () => { fetch("https://api-dolar-argentina.herokuapp.com/api/dolarblue").then((response) => response.json())
+    //     .then((data) => {console.log(data)})
+    //     .catch(error => console.log(error , "Hubo un error, algo salió mal"))
+
+        
+    //   }
