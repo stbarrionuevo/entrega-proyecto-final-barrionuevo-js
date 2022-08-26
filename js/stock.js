@@ -4,7 +4,7 @@ const stockActual =
             precio: 2599,
             talle:"M",
             id:01,
-            categoria: "Camiseta",
+           
             img:'img-catalogo/boca-diego.webp',
             cantidad:1
         },
@@ -13,7 +13,7 @@ const stockActual =
             precio: 1599,
             talle:"L",
             id:02,
-            categoria:"Camiseta",
+           
             img:"img-catalogo/boca-titular.webp",
             cantidad:1
         },
@@ -23,11 +23,21 @@ const stockActual =
             precio: 2999,
             talle:"XL",
             id:03,
-            categoria:"Abrigo",
+            
             img:"img-catalogo/buzo-amarillo.webp",
             cantidad:1
         },
         
+
+        {nombre: "Campera rompevientos Liverpool",
+        precio: 3299,
+        talle:"L",
+        id:04,
+        
+        img:"img-catalogo/liverpool.jpg",
+        cantidad:1
+
+        }
 
         
         ];

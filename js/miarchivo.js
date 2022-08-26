@@ -47,7 +47,6 @@ const carritoDom = document.getElementById('carrito')
         <div class="card-body">
         <h5 class= "card-tittle"><strong>${producto.nombre}</strong></h5>
         <p class="card-text">Talle: ${producto.talle}</p>
-        <p class="card-text">Categoría: ${producto.categoria}</p>
         <p class="card-text">Precio:$ ${producto.precio}</p>
         <button id="agregar${producto.id}" class="btn btn-primary boton-cat">Agregar a carrito <i class="fa-solid fa-plus"></i></button>
        </div>
@@ -104,7 +103,7 @@ const agregarACarrito = (idProducto) => {
 
 const eliminarProducto = (productoId) => {
 
-    const mismoProducto = carrito.some (producto => producto.id === producto)
+   
 {
 
 
@@ -119,11 +118,7 @@ actualizarCarrito();
 restarProductos();
 
 }
-if(mismoProducto){
-    const producto = carrito.map(producto => {
-      producto.id === productoId && producto.cantidad-- 
-    })
-}
+
 }
 
 //Funcion para recargar carrito
@@ -185,6 +180,7 @@ const botonVaciar = document.getElementById('vaciar-carrito').addEventListener('
 //Boton finalizar compra
 
 const botonFin = document.getElementById('boton-fin').addEventListener('click', () => {
+    
     if(totalAPagar.innerText != 0){Swal.fire({
         position: 'center',
         icon: 'success',
@@ -200,19 +196,38 @@ const botonFin = document.getElementById('boton-fin').addEventListener('click', 
         timer: 3000})}})
 
 
+    const buttonDolar = document.getElementById("dolar-boton");
+
+    const calcularPrecioDolar = (totalAPagar,precioDolar) =>{
+        totalAPagar / precioDolar 
+        
+    }
+    
+    // const getPrecioDolar = () => { fetch("https://api-dolar-argentina.herokuapp.com/api/dolarblue").then((response) => response.json())
+    //     .then((data) => {console.log(data)})
+    //     .catch(error => console.log(error , "Hubo un error, algo salió mal"))
+
+        
+    //   }
+
+      const getPrecioDolar = () => { fetch("https://www.dolarsi.com/api/api.php?type=valoresprincipales").then((response) => response.json())
+      .then((data) => {console.log(data.casa.venta) 
+        document.getElementById('dolar').appendChild(data.casa.venta[0])})
+      .catch(error => console.log(error , "Hubo un error, algo salió mal"))
+
+        calcularPrecioDolar();
+        const p = document.getElementById('dolar')
+        p.innerText = 0
+      
+    }
+  
+  
+
+    buttonDolar.addEventListener('click', getPrecioDolar() )
 
 
-
-
-
-
-
-
-
-
-
-
-
+      
+  
 
 
 
