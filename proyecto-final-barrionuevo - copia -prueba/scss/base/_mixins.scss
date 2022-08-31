@@ -1,0 +1,14 @@
+@mixin colores($col-letra,$col-fondo,$borde,$transicion) {
+    color: $col-letra;
+    background-color: $col-fondo;
+    border: $borde;
+    transition: $transicion;
+    
+}
+
+@mixin mwh ($margen, $medida-w, $medida-h){
+    margin: $margen;
+    width: $medida-w;
+    height: $medida-h;
+}
+    

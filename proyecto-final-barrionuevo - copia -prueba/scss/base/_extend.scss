@@ -1,0 +1,15 @@
+@import'variables';
+
+%estilotitulo{
+    font-family: $fuente-titulo;
+    font-size: 2em;
+    margin-top: 2em;
+}
+
+
+%estilo-li{
+    color: $color-secundario-kanki;
+    transition: all 1s;
+
+    &:hover{color: $color-principal-kanki;}
+}

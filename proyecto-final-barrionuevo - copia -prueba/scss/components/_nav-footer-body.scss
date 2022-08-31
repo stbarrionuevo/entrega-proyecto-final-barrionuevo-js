@@ -1,0 +1,94 @@
+@import'../base/variables';
+@import'../base/extend';
+@import'../base/listas';
+
+/*Estilo de Body*/
+body{
+    margin: 0;
+     font-family: 'Roboto', sans-serif;
+     background-color: map-get($map: $colores, $key:claro2)
+    
+ }
+ 
+ /*Estilo de NAV*/
+
+.li-estilo{ 
+    @extend %estilo-li;
+
+    li a{
+        @extend %estilo-li;
+            }
+
+
+}
+
+.b-estilo{
+    font-family:$fuente-titulo;
+    color: map-get($map: $colores, $key:secundario );
+    transition: all 1s;
+    &:hover{
+        color: map-get($map:$colores , $key:primario );
+    }
+}
+
+
+ul
+{
+ li {
+        a{font-family: "Macondo", cursive;}
+    }
+}
+
+.menu-hamburguesa{
+    background-color:map-get($map: $colores, $key:secundario );
+    &:hover{background-color: $color-principal-kanki;}
+}
+
+/* Comienzo FOOTER*/
+
+
+/*ESTILO DE FOOTER*/
+footer{
+    padding: 2em;
+    background-color: map-get($map: $colores, $key:footer );
+    border: 5px double #000000;
+   
+    
+}
+
+
+.footer-images-container{
+    display: flex;
+
+    flex-direction: row-reverse;
+
+    justify-content: space-around;
+
+    i{color:map-get($map: $colores, $key:claro );
+        margin: 1em auto;
+        transition: all .5s;
+        &:hover{
+        color: $color-principal-kanki;
+        }
+    }
+    
+}
+  /*ESTILO DE TEXTO DE FOOTER*/
+
+  .text-footer-container{
+    display: flex;
+    justify-content: space-between;
+    font-size: 1em;
+    padding-top: 2em;
+}
+
+.text-footer {
+    text-align: center;
+    font-family: $fuente-titulo;
+    color:map-get($map: $colores, $key:claro );
+    transition: all 1s;
+    &:hover{
+        color: $color-principal-kanki;
+        cursor: default;
+    }
+}

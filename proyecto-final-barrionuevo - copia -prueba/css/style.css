@@ -1,0 +1,727 @@
+@charset "UTF-8";
+.staff-titulo, .titulo-nosotros, .titulo-nombre, .titulo-tabla-talles, .titulo-preguntas, .pago, .titulo-politicas, .titulo-terminos, .titulo-ayuda, .titulo-catalogo {
+  font-family: "PT Serif", serif;
+  font-size: 2em;
+  margin-top: 2em;
+}
+
+.carrito{
+
+  border: 2px solid rgb(227, 143, 33);
+  margin: 4em;
+
+}
+
+.producto-ingresado{
+  margin-top: 2em;
+  font-family:"PT Serif", serif;
+  
+}
+
+
+.total{
+  font-family:"PT Serif", serif;
+  transition: all 1s;
+  cursor: pointer;
+}
+
+.total:hover{
+
+  color: rgb(227, 143, 33);
+
+}
+
+
+
+.li-estilo li a, .li-estilo {
+  color: #daa520;
+  transition: all 1s;
+}
+.li-estilo li a:hover, .li-estilo:hover {
+  color: rgb(227, 143, 33);
+}
+
+.staff-titulo, .titulo-nosotros, .titulo-nombre, .titulo-tabla-talles, .titulo-preguntas, .pago, .titulo-politicas, .titulo-terminos, .titulo-ayuda, .titulo-catalogo {
+  font-family: "PT Serif", serif;
+  font-size: 2em;
+  margin-top: 2em;
+}
+
+.li-estilo li a, .li-estilo {
+  color: #daa520;
+  transition: all 1s;
+}
+.li-estilo li a:hover, .li-estilo:hover {
+  color: rgb(227, 143, 33);
+}
+
+/*Estilo section 1 index*/
+.contenedor-principal {
+  text-align: center;
+  background-color: #000;
+  object-fit: cover;
+  padding: 2em;
+  margin: 3.8em 1em;
+  border: 4px solid rgb(227, 143, 33);
+}
+.contenedor-principal .h-principal-index {
+  text-align: center;
+  font-size: 2.5em;
+  font-family: "PT Serif";
+  color: #fff;
+  transition: all 1s;
+}
+.contenedor-principal .h-principal-index:hover {
+  color: rgb(227, 143, 33);
+}
+.contenedor-principal .p-titulo {
+  font-size: 1em;
+  font-family: "Macondo", cursive;
+  color: #fffff1;
+  transition: all 1s;
+}
+.contenedor-principal .p-titulo:hover {
+  color: #daa520;
+}
+
+/*ESTILO DE LOGO WSP */
+.wsp-logo {
+  margin: 1em auto;
+  width: 5%;
+  height: auto;
+  position: fixed;
+  bottom: 0;
+  right: 0;
+  border-radius: 80%;
+  transition: all 5s;
+}
+.wsp-logo:hover {
+  transform: rotateY(360deg);
+  cursor: help;
+  opacity: .1;
+}
+
+.help-logo {
+  margin: 1.5em;
+  width: 5%;
+  height: auto;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  border-radius: 80%;
+  transition: all 5s;
+  background-color: rgb(227, 143, 33);
+}
+.help-logo:hover {
+  transform: rotateY(360deg);
+  cursor: help;
+  opacity: .1;
+}
+
+
+/*Fin de estilo de sección 1 */ /**************/
+/* Comienzo de estilo de sección 2*/
+.titulo-productos {
+  text-align: center;
+  padding: 1em;
+  font-family: "PT Serif", serif;
+  font-size: 2em;
+  margin-top: -1.5em;
+  color: #000;
+  background-color: #fff;
+  border: 5px double #daa520;
+  transition: all 2s;
+}
+.titulo-productos:hover {
+  color: rgb(227, 143, 33);
+  background-color: #161616;
+  border: 5px solid #fff;
+  outline: 5px solid #000;
+}
+
+/*ESTILO IMAGENES DE CAMISETAS de carrousel*/
+.carrousel-estilo {
+  background: linear-gradient(135deg, black 25%, transparent 25%) -50px 0, linear-gradient(225deg, black 25%, transparent 25%) -50px 0, linear-gradient(315deg, black 25%, transparent 25%), linear-gradient(45deg, black 25%, transparent 25%);
+  background-size: 2em 2em;
+  background-color: #161616;
+}
+
+.sec-camisetas {
+  width: 50%;
+  border: 2px solid #000;
+}
+
+.estilo-texto-img {
+  color: #fff;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+}
+
+.cami-boc {
+  color: lightblue;
+}
+
+.cami-riv {
+  color: salmon;
+}
+
+.cami-die {
+  color: rgb(39, 129, 219);
+}
+
+/*ESTILO DE REDIRECCIONADOR A CATALAGO.HTML*/
+.productos-link-a-catalogo {
+  margin: 1em;
+  font-size: 1em;
+  font-family: "PT Serif", serif;
+  color: #fff;
+  background-color: #000;
+  border: 2px solid #000;
+  transition: all 1s;
+  border-radius: 50px;
+  padding-top: 0.5em;
+  padding-bottom: 0.5em;
+  transition: all 1s;
+}
+.productos-link-a-catalogo:hover {
+  text-align: center;
+  margin: 1em;
+  font-size: 1em;
+  font-family: "PT Serif", serif;
+  color: rgb(227, 143, 33);
+  background-color: #fff;
+  border: 2px solid #000;
+  transition: all 1s;
+  border-radius: 50px;
+}
+.productos-link-a-catalogo a {
+  text-decoration: none;
+  color: rgb(227, 143, 33);
+  background: none;
+  border: none;
+  margin-left: 0.2em;
+  display: inline-block;
+  transition: all 0.5s;
+}
+.productos-link-a-catalogo a:hover {
+  color: #000;
+  border: none;
+}
+
+/* Fin de estilo de sección 2*/ /*************************/
+/* Comienzo de estilo de sección 3*/
+/*ESTILO DE CONTENEDOR DE PARTE ENVIO*/
+.iframe-div {
+  display: flex;
+  width: 100%;
+  margin-bottom: 2em;
+}
+
+/*ESTILO TEXTO ENVIO*/
+.envios-titulo {
+  text-align: center;
+  font-size: 1.4em;
+  font-family: "PT Serif", serif;
+  margin-top: 3em;
+  transition: all 0.5s;
+}
+.envios-titulo:hover {
+  color: rgb(227, 143, 33);
+  transform: translateX(-0.5em);
+}
+
+.envios-texto {
+  color: #161616;
+  margin-top: 2em;
+}
+
+.acordeon-estilo {
+  margin: 4em;
+}
+
+.boton-acordeon {
+  color: #000;
+  background-color: rgb(227, 143, 33);
+  border: 2px solid #000;
+  transition: all 1s;
+}
+
+.envios-container {
+  margin: 1em;
+}
+
+/* Fin de estilo de sección 3*/
+.staff-titulo, .titulo-nosotros, .titulo-nombre, .titulo-tabla-talles, .titulo-preguntas, .pago, .titulo-politicas, .titulo-terminos, .titulo-ayuda, .titulo-catalogo {
+  font-family: "PT Serif", serif;
+  font-size: 2em;
+  margin-top: 2em;
+}
+
+.li-estilo li a, .li-estilo {
+  color: #daa520;
+  transition: all 1s;
+}
+.li-estilo li a:hover, .li-estilo:hover {
+  color: rgb(227, 143, 33);
+}
+
+/*COMIENZO DE ESTILO DE CATALOGO*/
+/*ESTILO TITULO*/
+.titulo-catalogo {
+  color: #fff;
+  background-color: #000;
+  border: 4px double #f8f9fa;
+  transition: all 1s;
+  border-radius: 50px;
+}
+.titulo-catalogo:hover {
+  color: rgb(227, 143, 33);
+}
+
+/*CONTAINERS*/
+.container-img .products-container {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.contenedor-cards {
+    margin-top: 2em;
+    margin-bottom: 2em; 
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    
+    gap: 2em;
+    
+}
+
+/*ESTILO DE IMGS*/
+.images-catalogo {
+  margin: 1em auto;
+  width: 100%;
+  height: 80%;
+  border: 2px solid #000;
+  transition: all 0.5s;
+}
+.images-catalogo:hover {
+  cursor: zoom-in;
+  transform: scale(102%);
+}
+
+.card {
+  outline: 2px solid rgb(227, 143, 33);
+  margin: 4em;
+  
+  
+}
+
+.boton-cat {
+  background-color: rgb(227, 143, 33);
+  border: 2px solid #161616;
+  color: #161616;
+  transition: all 1.5s;
+}
+.boton-cat:hover {
+  background-color: #161616;
+  color: #fffff1;
+  border: 2px solid rgb(227, 143, 33);
+}
+
+.div-talle {
+  color: aliceblue;
+  background-color: #161616;
+  border: 2px solid #000;
+  transition: all 1.5s;
+  margin: 2em;
+  cursor: default;
+}
+.div-talle:hover {
+  color: rgb(227, 143, 33);
+}
+.div-talle h2 {
+  font-size: 1.5em;
+  font-family: "PT Serif", serif;
+}
+.div-talle a {
+  text-decoration: none;
+  color: rgb(227, 143, 33);
+}
+
+.staff-titulo, .titulo-nosotros, .titulo-nombre, .titulo-tabla-talles, .titulo-preguntas, .pago, .titulo-politicas, .titulo-terminos, .titulo-ayuda, .titulo-catalogo {
+  font-family: "PT Serif", serif;
+  font-size: 2em;
+  margin-top: 2em;
+}
+
+.li-estilo li a, .li-estilo {
+  color: #daa520;
+  transition: all 1s;
+}
+.li-estilo li a:hover, .li-estilo:hover {
+  color: rgb(227, 143, 33);
+}
+
+/*ESTILO DE HTML AYUDA*/
+.titulo-ayuda {
+  text-align: center;
+  color: #f8f9fa;
+  background-color: #161616;
+  border: 5px double #fff;
+  transition: all 0.5s;
+}
+.titulo-ayuda:hover {
+  transform: translateX(-0.3em);
+  color: rgb(227, 143, 33);
+}
+
+.titulo-terminos {
+  margin-left: auto;
+  margin-right: auto;
+  color: rgb(227, 143, 33);
+  transition: all 0.5s;
+}
+.titulo-terminos:hover {
+  transform: translateX(-0.3em);
+}
+
+.titulo-politicas {
+  transition: all 0.5s;
+}
+.titulo-politicas:hover {
+  color: rgb(227, 143, 33);
+  transform: translateX(-0.3em);
+}
+
+/*ESTILOS MEDIOS DE PAGO*/
+.iconos-medios-pago {
+  width: 10%;
+  margin: 2em;
+  margin: 2em;
+  width: 10%;
+  height: auto;
+}
+
+.pago {
+  transition: all 1s;
+}
+.pago:hover {
+  color: #daa520;
+}
+
+.titulo-preguntas {
+  transition: all 1.5s;
+}
+.titulo-preguntas:hover {
+  color: rgb(227, 143, 33);
+  transform: translateY(-1em);
+}
+
+/*ESTILO DE TABLA*/
+.table {
+  margin-top: 4em;
+}
+
+/*ESTILO BOTÓN*/
+.boton-volver {
+  color: #000;
+  background-color: rgb(227, 143, 33);
+  border: 2px solid #161616;
+  transition: all 1.5s;
+  margin: 2em;
+}
+.boton-volver:hover {
+  background-color: #161616;
+}
+.boton-volver a {
+  color: #000;
+  text-decoration: none;
+  transition: 1.5s;
+}
+.boton-volver a:hover {
+  color: rgb(227, 143, 33);
+}
+
+.staff-titulo, .titulo-nosotros, .titulo-nombre, .titulo-catalogo, .titulo-ayuda, .titulo-terminos, .titulo-politicas, .pago, .titulo-preguntas, .titulo-tabla-talles {
+  font-family: "PT Serif", serif;
+  font-size: 2em;
+  margin-top: 2em;
+}
+
+.li-estilo li a, .li-estilo {
+  color: #daa520;
+  transition: all 1s;
+}
+.li-estilo li a:hover, .li-estilo:hover {
+  color: rgb(227, 143, 33);
+}
+
+.titulo-nosotros, .titulo-nombre {
+  transition: all 1s;
+}
+.titulo-nosotros:hover, .titulo-nombre:hover {
+  color: rgb(227, 143, 33);
+  transform: translateX(0.5em);
+}
+
+.staff-titulo {
+  color: #fff;
+  background-color: #000;
+  border: 4px double #f8f9fa;
+  transition: all 1s;
+  transition: all 1s;
+}
+.staff-titulo:hover {
+  color: #daa520;
+}
+
+.carta-staff {
+  transition: all 1s;
+  cursor: default;
+}
+.carta-staff:hover {
+  transform: scale(90%);
+}
+
+.img-de-staff {
+  border: 2px solid #161616;
+}
+
+.contenedor-perros {
+  margin: auto 2em;
+}
+
+.img-perros {
+  border: 4px solid rgb(227, 143, 33);
+  transition: all 0.5s;
+  margin-top: 2em;
+}
+.img-perros:hover {
+  border: 8px double #daa520;
+}
+
+.seccion-3 {
+  margin-bottom: 4em;
+}
+
+.titulo-catalogo, .titulo-ayuda, .titulo-terminos, .titulo-politicas, .pago, .titulo-preguntas, .titulo-tabla-talles, .titulo-nosotros, .titulo-nombre, .staff-titulo {
+  font-family: "PT Serif", serif;
+  font-size: 2em;
+  margin-top: 2em;
+}
+
+.li-estilo li a, .li-estilo {
+  color: #daa520;
+  transition: all 1s;
+}
+.li-estilo li a:hover, .li-estilo:hover {
+  color: rgb(227, 143, 33);
+}
+
+/*Estilo de Body*/
+body {
+  margin: 0;
+  font-family: "Roboto", sans-serif;
+  background-color: #fffff1;
+}
+
+/*Estilo de NAV*/
+.b-estilo {
+  font-family: "PT Serif", serif;
+  color: #daa520;
+  transition: all 1s;
+}
+.b-estilo:hover {
+  color: rgb(227, 143, 33);
+}
+
+ul li a {
+  font-family: "Macondo", cursive;
+}
+
+.menu-hamburguesa {
+  background-color: #daa520;
+}
+.menu-hamburguesa:hover {
+  background-color: rgb(227, 143, 33);
+}
+
+/* Comienzo FOOTER*/
+/*ESTILO DE FOOTER*/
+footer {
+  padding: 2em;
+  background-color: #161616;
+  border: 5px double #000000;
+}
+
+.footer-images-container {
+  display: flex;
+  flex-direction: row-reverse;
+  justify-content: space-around;
+}
+.footer-images-container i {
+  color: #fff;
+  margin: 1em auto;
+  transition: all 0.5s;
+}
+.footer-images-container i:hover {
+  color: rgb(227, 143, 33);
+}
+
+/*ESTILO DE TEXTO DE FOOTER*/
+.text-footer-container {
+  display: flex;
+  justify-content: space-between;
+  font-size: 1em;
+  padding-top: 2em;
+}
+
+.text-footer {
+  text-align: center;
+  font-family: "PT Serif", serif;
+  color: #fff;
+  transition: all 1s;
+}
+.text-footer:hover {
+  color: rgb(227, 143, 33);
+  cursor: default;
+}
+
+/*MEDIA Q*/
+@media (max-width: 1000px) {
+  .titulo-productos {
+    padding: 0.5em;
+    font-size: 1em;
+    margin-top: -2.5em;
+  }
+  .redireccion-catalogo {
+    display: none;
+  }
+  /*CATALOGO*/
+  .contenedor-cards {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 2em;
+    justify-items: center;
+  }
+  .div-talle h2 {
+    font-size: 1em;
+  }
+  /*ayuda iconos*/
+  .iconos-medios-pago {
+    width: 25%;
+  }
+  /*sobre nosotros staff*/
+  .contenedor-staff {
+    display: flex;
+    flex-direction: column;
+    gap: 1em;
+    width: 75%;
+  }
+  .carta-staff {
+    margin: 0.5em;
+  }
+  /*sobre nosotros nombre*/
+  .contenedor-perros {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 2em;
+    justify-items: center;
+  }
+  .img-perros {
+    width: 50%;
+  }
+  /*logo wsp y footer*/
+  .wsp-logo {
+    width: 8%;
+  }
+  .text-footer {
+    font-size: 0.4em;
+  }
+  .text-footer:nth-child(3) {
+    margin-right: 5em;
+  }
+}
+
+.div-carrito{
+
+  width:100%;
+  height: 8em;
+  margin: 4em auto;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  border:4px solid #000 ;
+}
+
+.modal{
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #111111bd;
+  display: flex;
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity .6s;
+  --transform: translateY(-100vh);
+  --transition: transform .8s;
+}
+
+.modal--show{
+
+opacity: 1;
+pointer-events: unset;
+transition: opacity .6s;
+--transform: translateY(0);
+}
+
+.modal-container{
+  width: 90%;
+  max-width: 600px;
+  max-height: 90%;
+  border-radius: 6px;
+  padding: 3em 2.5em;
+  background-color: #fff;
+  margin: auto;
+  display: grid;
+  gap: 1em;
+  place-items: center;
+  grid-auto-columns: 100%;
+  transform: var(--transform);
+  transition: var(--transition)
+}
+
+
+.modal-titulo{
+  font-size: 2.5em;
+}
+
+.modal-parrafo{
+  margin-bottom: 10px;
+}
+
+.modal-img{
+  width: 90%;
+  max-width: 300px;
+  border-radius: 10px;
+}
+
+.modal-cerrar{
+  text-decoration: none;
+  color: #fff;
+  background-color: rgb(227, 143, 33);
+  padding: 1em 3em;
+  border: 1px solid;
+  border-radius: 6px;
+  display: inline-block;
+  font-weight: 300;
+  transition:  background-color .3s;
+}
+
+.modal-cerrar:hover{
+  color: rgb(227, 143, 33);
+  background-color: #fff;
+}
+
+
+/*# sourceMappingURL=style.css.map */
