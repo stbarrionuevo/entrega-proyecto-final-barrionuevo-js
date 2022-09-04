@@ -1,20 +1,3 @@
-//Funcion con api
-
-let dolarBluePrecio; 
-
-const getPrecioDolar = () => { fetch("https://www.dolarsi.com/api/api.php?type=dolar")
-
-    .then((response) => response.json())
-    .then((data) => {   
-    dolarBluePrecio = data[1].casa.compra
-    const p = document.getElementById('dolar-actual')
-    p.innerText = "Actualmente el precio de venta de dólar blue es de: $" + dolarBluePrecio
-   
-})
-.catch(error => console.log(error , "Hubo un error, algo salió mal. No te preocupes, no es tu culpa!"))
-
-}
-
 
 //Declaro array con productos (stock)
 const productosDisponibles =  stockActual
@@ -166,6 +149,23 @@ const actualizarCarrito = () => {
 const totalAPagar = document.getElementById('precio-total')
 const totalEnDolar = document.getElementById('dolar')
 
+//Funcion con api
+
+let dolarBluePrecio; 
+
+const getPrecioDolar = () => { fetch("https://www.dolarsi.com/api/api.php?type=dolar")
+
+    .then((response) => response.json())
+    .then((data) => {   
+    dolarBluePrecio = data[1].casa.compra
+    const p = document.getElementById('dolar-actual')
+    p.innerText = "Actualmente el precio de venta de dólar blue es de: $" + dolarBluePrecio
+   
+})
+.catch(error => console.log(error , "Hubo un error, algo salió mal. No te preocupes, no es tu culpa!"))
+
+}
+
 
 //Funcion final para sumar total a pagar
 
@@ -231,7 +231,9 @@ const botonFin = document.getElementById('boton-fin').addEventListener('click', 
         showConfirmButton: true,
         confirmButtonText: 'Ok',
         timer: 3000})}})
-//Bajar variable de dolar blue
+
+
+//Funcion mostrar precio actual del dolar
 
 const buttonDolar = document.getElementById('dolar-boton')
 
@@ -244,12 +246,7 @@ buttonDolar.addEventListener('click', () => {
    
 })
 
-//Funcion para calcular precio final en dolares
 
-const calcularPrecioFinalDolar = () => { 
-  const totalDolar = totalAPagar / dolarBluePrecio
-  return totalDolar
-}
 
         
 //Modal
