@@ -1,6 +1,6 @@
 //Funcion con api
 
-let dolarBluePrecio = 287; 
+let dolarBluePrecio; 
 
 const getPrecioDolar = () => { fetch("https://www.dolarsi.com/api/api.php?type=dolar")
 
